@@ -5,7 +5,6 @@ public abstract class Cliente {
     private int codigo;
 
     public Cliente() {
-
     }
 
     public Cliente(String n, String e, String f) {
@@ -54,3 +53,6 @@ public abstract class Cliente {
         return res;
     }
 }
+
+
+

@@ -2,6 +2,7 @@ package asdas;
 
 public class Ponto {
 	private int x, y;
+	
 	public Ponto(){
 		setPonto(0,0);
 	}

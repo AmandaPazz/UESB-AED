@@ -17,13 +17,15 @@ public class Conta {
         }
     }
 
+    public void creditar(double valor) {
+        saldo += valor;
+    }
+
     public void transferir(Conta destino, double valor) throws SaldoInsuficienteException {
         debitar(valor);
         destino.creditar(valor);
     }
 
-    public void creditar(double valor) {
-        saldo += valor;
-    }
+    
 
 }
