@@ -33,31 +33,47 @@ public class Main {
         raiz.imprimeEmLarguraRecursivo(fila);
         System.out.println("\nImprimindo em largura invertido:");
         raiz.imprimeEmLarguraInvertido();
+
+
         System.out.println("\nCalculando a altura por recursividade:");
         System.out.print(raiz.calculaAltura());
         System.out.println("\nCalculando a altura por largura:");
         System.out.print(raiz.calculaAlturaEmLargura());
+
+
         System.out.println("\nPesquisando valor (7):");
         System.out.print(raiz.pesquisarValor("07").getValor());
         System.out.println("\nPesquisando valor (34):");
         System.out.print(raiz.pesquisarValor("34"));
+
+
         System.out.println("\nCalculando o total de nos:");
         System.out.print(raiz.calculaToTalNodes());
         System.out.println("\nCalculando o total de folhas:");
         System.out.print(raiz.calculaToTalNodesFolhas());
+
+
         System.out.println("\nRemovendo o (7):");
         System.out.println(raiz.removerNode("07", raiz.acharPai(raiz.pesquisarValor("07"))));
         raiz.imprimeEmLargura();
+
+
         System.out.println("\nNovo pai do (6)");
         System.out.print(raiz.acharPai(raiz.pesquisarValor("06")).getValor());
         System.out.println("\nNovo pai do (8)");
         System.out.print(raiz.acharPai(raiz.pesquisarValor("08")).getValor());
+
+
         System.out.println("\nCalculando a profundidade do 01");
         System.out.print(raiz.calcularProfundidade(raiz.pesquisarValor("01")));
         System.out.println("\nCalculando a altura do 05");
         System.out.print(raiz.calcularAltura(raiz.pesquisarValor("05")));
+
+
         System.out.println("\nCalculando o comprimento do caminho entre o 10 e o 01:");
         System.out.print(raiz.calcularComprimentoCaminho(raiz.pesquisarValor("01")));
+
+        
         System.out.println("\nCVerificando se o 01 eh interno ou externo:");
         if (raiz.pesquisarValor("01").ehInterno()) {
             System.out.println("Eh interno");
